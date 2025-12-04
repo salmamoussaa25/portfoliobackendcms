@@ -1,3 +1,7 @@
+h1, h2, p{
+    margin: 0;
+}
+
 .loginpagecont{
     display: flex;
     flex-direction: column;
@@ -8,11 +12,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
+    height: 100vh;
 }
 
 .logincontent{
     display: flex;
     flex-direction: row;
+    gap: 232px;
 }
 
 .loginsection_cont{
@@ -21,11 +27,19 @@
     align-items: flex-start;
 }
 
+.loginheadingsection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13.157px;
+    align-self: stretch;
+}
+
 .loginfields_cont{
 
 }
 
-.welcometext{
+.welcomeheading{
     color: #E66248;
     font-family: var(--secondaryfontfamily);
     font-size: 31.577px;
@@ -33,3 +47,21 @@
     font-weight: 700;
     line-height: normal;
 }
+
+.welcometext{
+    color: #E66249;
+    font-family: var(--secondaryfontfamily);
+    font-size: 19.736px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.signincont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34.208px;
+    align-self: stretch;
+}
+

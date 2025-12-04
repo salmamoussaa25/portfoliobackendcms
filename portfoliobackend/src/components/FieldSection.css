@@ -1,0 +1,44 @@
+.fieldsection_cont {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .field_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fieldtitle {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--primarycolor);
+    font-family: var(--secondaryfontfamily);
+    font-size: 26.314px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+  
+  .field_right_label {
+    font-size: 18px;
+    color: var(--primarycolor);
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: var(--secondaryfontfamily);
+
+  }
+  
+  .field_input {
+    width: 100%;
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--main-lighter-color);
+    border: 2px solid #E66248;
+    font-size: 24px;
+    color: var(--primarycolor);
+    font-family: var(--secondaryfontfamily);
+
+  }

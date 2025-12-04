@@ -1,7 +1,8 @@
 import React from 'react';
 import './LogIn.css';
 import loginlogo from '../assets/loginlogo.png';
-import Title from '../components/Title'
+import Title from '../components/Title';
+import FieldSection from "../components/FieldSection";
 
 const LogIn = () => {
     return ( 
@@ -11,7 +12,31 @@ const LogIn = () => {
             <section className='logincontent'>
                 <img src={loginlogo} alt="Logo, sal's studio by Salma Moussa" />
                 <section className='loginsection_cont'>
-                    <h1 className='welcometext'>Welcome Back!</h1>
+                    <section className='signincont'>
+                        <section className='loginheadingsection'>
+                            <h1 className='welcomeheading'>Welcome Back!</h1>
+                            <p className='welcometext'>Please log in with the email provided by your supervisors</p>
+                        </section>
+                        
+                        <FieldSection
+                            label="Email"
+                            placeholder="Enter your email address"
+                            type="email"
+                        />
+
+                        <FieldSection
+                            label="Password"
+                            placeholder="Enter your password"
+                            type="password"
+                            rightLabel="Forgot Password?"
+                        />
+
+                        <div className="remember_me">
+                            <input type="checkbox" id="remember" />
+                            <label htmlFor="remember">Remember Me</label>
+                        </div>
+
+                    </section>
                 </section>
             </section>
         </div> 

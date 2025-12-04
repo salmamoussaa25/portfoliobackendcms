@@ -15,5 +15,7 @@
     --seriffontfamily: "Abril Fatface", serif;
     --seriffontsize: 32px; 
     --arabicfontfamily: 'BlueOcean', sans-serif;
-    --arabicfontdirection:  rtl;    
+    --arabicfontdirection:  rtl;
+    --main-lighter-color: #FFFAEE;
+   
 }
