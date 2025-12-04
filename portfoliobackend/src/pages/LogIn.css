@@ -1,0 +1,35 @@
+.loginpagecont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(../assets/loginbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.logincontent{
+    display: flex;
+    flex-direction: row;
+}
+
+.loginsection_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.loginfields_cont{
+
+}
+
+.welcometext{
+    color: #E66248;
+    font-family: var(--secondaryfontfamily);
+    font-size: 31.577px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
