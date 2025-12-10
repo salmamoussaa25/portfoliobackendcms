@@ -35,10 +35,6 @@ h1, h2, p{
     align-self: stretch;
 }
 
-.loginfields_cont{
-
-}
-
 .welcomeheading{
     color: #E66248;
     font-family: var(--secondaryfontfamily);
@@ -63,5 +59,23 @@ h1, h2, p{
     align-items: center;
     gap: 34.208px;
     align-self: stretch;
+}
+  
+.remember_me {
+    display: flex;
+    width: 100%;
+    align-items: left;
+    gap: 8px;
+    font-family: var(--secondaryfontfamily);
+    font-size: 20px;
+    color: #d15d47;
+    margin-top: 10px;
+}
+  
+.remember_me input {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #e88267;
+    cursor: pointer;
 }
 

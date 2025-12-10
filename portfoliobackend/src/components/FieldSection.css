@@ -6,7 +6,8 @@
   .field_header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    align-content: flex-start;
   }
   
   .fieldtitle {
