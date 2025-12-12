@@ -3,6 +3,8 @@ import './LogIn.css';
 import loginlogo from '../assets/loginlogo.png';
 import Title from '../components/Title';
 import FieldSection from "../components/FieldSection";
+import { Link } from "react-router-dom";
+import OrangeButton from '../components/OrangeButton';
 
 const LogIn = () => {
     return ( 
@@ -37,8 +39,12 @@ const LogIn = () => {
                         </div>
 
                         <p className='byclicking_text'>*By clicking Sign In,  you are agreeing to the Terms of Services and Privacy Policy</p>  
-
                     </section>
+
+                    <Link to="/dashboard-overview">
+                        <OrangeButton buttonText="Sign In" />
+                    </Link>       
+
                 </section>
             </section>
         </div> 
