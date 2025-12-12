@@ -79,3 +79,12 @@ h1, h2, p{
     cursor: pointer;
 }
 
+.byclicking_text{
+    width: 535.494px;
+    color: #E66249;
+    font-family: var(--secondaryfontfamily);
+    font-size: 18.42px;
+    font-style: normal;
+    font-weight: var(--minitextfontweight);
+    line-height: normal;    
+}

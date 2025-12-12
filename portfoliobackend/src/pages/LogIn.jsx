@@ -36,6 +36,8 @@ const LogIn = () => {
                             <label htmlFor="remember">Remember Me</label>
                         </div>
 
+                        <p className='byclicking_text'>*By clicking Sign In,  you are agreeing to the Terms of Services and Privacy Policy</p>  
+
                     </section>
                 </section>
             </section>
