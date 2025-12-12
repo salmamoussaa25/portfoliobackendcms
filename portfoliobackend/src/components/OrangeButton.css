@@ -1,0 +1,41 @@
+:root{
+    --primarycolor: #E66249;
+    --maincolorgreendark: #023C40;
+    --maincolorlight: #FCF2D9;
+    --accentcolorpurple: #BBA0CA;
+    --primarytitlefontfamily: "BBH Sans Hegarty", sans-serif;
+    --primaryfontsize: 40px;
+    --secondaryfontfamily: "Lexend", sans-serif;
+    --secondaryfontsize: 30px;
+    --secondaryfontweight: 400;
+    --subheadingfontsize: 40px;
+    --subheadingfontweight: 500;
+    --minitextfontsize: 24px;
+    --minitextfontweight: 400;
+    --seriffontfamily: "Abril Fatface", serif;
+    --seriffontsize: 32px; 
+    --arabicfontfamily: 'BlueOcean', sans-serif;
+    --arabicfontdirection:  rtl;
+    --main-lighter-color: #FFFAEE;
+}
+
+.orangebutton1{
+    display: flex;
+    width: 232.881px;
+    padding: 13.157px;
+    justify-content: center;
+    align-items: center;
+    gap: 13.157px;
+    border-radius: 41px;
+    background: var(--primarycolor);
+    border: none;
+    color: #EDF3DC;
+    text-align: center;
+    font-family: var(--secondaryfontfamily);
+    font-size: var(--minitextfontsize).683px;
+    font-style: normal;
+    font-weight: var(--minitextfontweight);
+    line-height: normal;
+    text-decoration: none;
+}
+
