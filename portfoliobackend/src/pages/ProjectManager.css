@@ -1,0 +1,188 @@
+/* Header Layout */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.page-title {
+    color: var(--primarycolor);
+    font-family: var(--primarytitlefontfamily);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+
+/* Toolbar (Export, Create, Customize) */
+.toolbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.action-buttons-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1.5px solid var(--primarycolor);
+    color: var(--primarycolor);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-family: var(--secondaryfontfamily);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+.lang-toggle-pill {
+    background-color: white;
+    padding: 4px;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.lang-opt {
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primarycolor);
+}
+
+.lang-opt.active {
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+/* Table Container - The Card Look */
+.table-container {
+    background-color: var(--main-lighter-color); /* Light background */
+    border-radius: 20px;
+    overflow: hidden; /* For rounded corners */
+}
+
+/* Table Styling */
+.projects-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Space between rows */
+}
+
+.projects-table th {
+    text-align: left;
+    padding: 15px 20px;
+    color: var(--primarycolor);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.projects-table tbody tr {
+    background-color: var(--maincolorlight); /* The creamy row background */
+    transition: transform 0.2s ease;
+}
+
+.projects-table tbody tr:hover {
+    transform: scale(1.005);
+}
+
+.projects-table td {
+    padding: 15px 20px;
+    color: var(--primarycolor);
+    font-size: 13px;
+    border-top: 1px solid rgba(230, 98, 73, 0.2);
+    border-bottom: 1px solid rgba(230, 98, 73, 0.2);
+}
+
+/* First and Last Cells for Border Radius on Rows */
+.projects-table td:first-child {
+    border-left: 1px solid rgba(230, 98, 73, 0.2);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.projects-table td:last-child {
+    border-right: 1px solid rgba(230, 98, 73, 0.2);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Cell Specifics */
+.category-badge {
+    border: 1px solid var(--primarycolor);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.title-cell {
+    font-weight: 600;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.desc-cell {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.8;
+}
+
+.thumbnail-wrapper img {
+    width: 40px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.link-text {
+    color: var(--primarycolor);
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.edit-icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primarycolor);
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.edit-icon-btn:hover {
+    opacity: 1;
+}
