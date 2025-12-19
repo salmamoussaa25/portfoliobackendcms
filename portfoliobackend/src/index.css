@@ -19,3 +19,9 @@
     --main-lighter-color: #FFFAEE;
    
 }
+
+body{
+    background-image: url(./assets/background_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

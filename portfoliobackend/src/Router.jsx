@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LogIn from './pages/LogIn';
 import DashboardOverview from './pages/DashboardOverview';
-import 
 
 const Router = () => {
     return ( <>

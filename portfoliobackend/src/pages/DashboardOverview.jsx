@@ -1,8 +1,10 @@
 import React from 'react';
-import 'DashboardOverview.css';
+import './DashboardOverview.css';
 import SearchBar from '../components/SearchBar'
 import ProfileButton from '../components/ProfileButton';
 import MessageNotifications from '../components/MessageNotifications';
+import Sidebar from '../components/Sidebar';
+import StatCard from "../components/StatCard";
 
 
 const DashboardOverview = () => {
