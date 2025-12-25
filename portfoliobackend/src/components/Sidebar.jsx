@@ -1,7 +1,5 @@
 import React from 'react';
-import './DashboardOverview.css';
-import Sidebar from './Sidebar';
-import StatCard from './StatCard';
+import '../pages/DashboardOverview.css';
 
 const Sidebar = () => {
   const menuItems = [
@@ -23,7 +21,7 @@ const Sidebar = () => {
       <ul className="sidebar-menu">
         {menuItems.map((item, index) => (
           <li key={index} className={`sidebar-item ${item.active ? 'active' : ''}`}>
-            {/* Placeholder SVG Icons - You can replace these with your library */}
+            
             <span className="sidebar-icon-placeholder"></span>
             <span className="sidebar-label">{item.label}</span>
           </li>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Sidebar from './Sidebar'; 
-import SearchBar from './SearchBar'; 
-import ProfileButton from './ProfileButton'; 
-import MessageNotifications from './MessageNotifications'; 
+import Sidebar from '../components/Sidebar'; 
+import SearchBar from '../components/SearchBar'; 
+import ProfileButton from '../components/ProfileButton'; 
+import MessageNotifications from '../components/MessageNotifications'; 
 import './ProjectManager.css';
 
 const ProjectManager = () => {

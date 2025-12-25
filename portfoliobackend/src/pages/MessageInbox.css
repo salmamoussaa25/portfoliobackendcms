@@ -1,0 +1,176 @@
+.inbox-card {
+  background-color: var(--main-lighter-color);
+  border-radius: 20px;
+  /* No padding here, we want the filter bar to touch edges or sit cleanly */
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Filter Bar Section */
+.inbox-filters {
+  background-color: white; /* Slightly cleaner white for filter area */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(230, 98, 73, 0.1);
+  border-radius: 20px 20px 0 0;
+}
+
+.filter-search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgba(230, 98, 73, 0.2);
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 400px;
+}
+
+.filter-search-icon {
+  color: var(--primarycolor);
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.filter-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: var(--secondaryfontfamily);
+  color: var(--primarycolor);
+  font-size: 14px;
+}
+
+.filter-search input::placeholder {
+  color: #BBA0CA; /* Use accent purple for placeholder based on soft look */
+  opacity: 0.8;
+}
+
+.filter-dropdowns {
+  display: flex;
+  gap: 15px;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  border: 1px solid rgba(230, 98, 73, 0.3);
+  color: var(--primarycolor);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-family: var(--secondaryfontfamily);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Table Header */
+.message-header-row {
+  display: flex;
+  padding: 15px 30px;
+  background-color: var(--maincolorlight); /* Cream background */
+  color: var(--primarycolor);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+/* Columns */
+.col-sender { flex: 1.2; }
+.col-email { flex: 2; }
+.col-subject { flex: 2; }
+.col-date { flex: 1; }
+.col-status { flex: 0.5; text-align: right; }
+
+/* Message Rows */
+.message-rows {
+  background-color: var(--main-lighter-color);
+}
+
+.message-row {
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(230, 98, 73, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.message-row:hover {
+  background-color: rgba(230, 98, 73, 0.03);
+}
+
+.row-main-content {
+  display: flex;
+  align-items: center;
+  color: var(--primarycolor);
+  font-size: 13px;
+}
+
+.font-bold { font-weight: 700; }
+.font-medium { font-weight: 500; }
+
+/* Status Badges */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.status-badge.new {
+  background-color: var(--accentcolorpurple);
+  color: white;
+}
+
+.status-badge.read {
+  background-color: rgba(230, 98, 73, 0.15); /* Light orange/peach */
+  color: var(--primarycolor);
+}
+
+/* Expanded State (The Active Row) */
+.message-row.expanded {
+  background-color: rgba(230, 98, 73, 0.1); /* The highlighted row background color */
+  border-left: 4px solid var(--primarycolor); /* Optional accent */
+}
+
+.row-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  padding-left: 0; 
+  /* Visual alignment based on screenshot - buttons are aligned leftish */
+}
+
+.action-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: white; /* Buttons are white inside the colored row */
+  border: 1px solid rgba(230, 98, 73, 0.2);
+  color: var(--primarycolor);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(230, 98, 73, 0.1);
+}
+
+.action-pill.delete {
+  color: #D9534F; /* Red text for delete */
+  border-color: rgba(217, 83, 79, 0.3);
+}
+
+.action-pill.delete:hover {
+  background-color: #D9534F;
+  color: white;
+}

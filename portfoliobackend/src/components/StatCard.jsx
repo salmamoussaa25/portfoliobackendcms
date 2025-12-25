@@ -1,5 +1,6 @@
 import React from 'react';
-import './DashboardOverview.css'; 
+import '../pages/DashboardOverview.css'; 
+import openwidget_icon from "../assets/openwidget_icon.png";
 
 const StatCard = ({ title, value, subtext, icon, className, children }) => {
   return (
@@ -20,7 +21,7 @@ const StatCard = ({ title, value, subtext, icon, className, children }) => {
       )}
 
       <div className="card-action-icon">
-        <img src="../assets/openwidget_icon" alt="open widget icon" />
+        <img src= {openwidget_icon} alt="open widget icon" />
       </div>
     </div>
   );
